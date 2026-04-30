@@ -25,16 +25,18 @@ async function callHolmsRag(question) {
     return `Elementary. In production, this will query your Databricks HolmsRAG endpoint for: “${question}”`;
   }
 
-  const response = await fetch(endpoint, {
-    method: 'POST',
-    headers: {
-      authorization: `Bearer ${token}`,
-      'content-type': 'application/json'
-    },
-    body: JSON.stringify({
-      messages: [{ role: 'user', content: question }]
-    })
-  });
+  const response = `🔍 Holmes says: I deduce you asked: "${question}"`;
+  // TODO: Implement actual call to HolmsRAG when endpoint and token are available. For now, we return a mock response.
+  // const response = await fetch(endpoint, {
+  //   method: 'POST',
+  //   headers: {
+  //     authorization: `Bearer ${token}`,
+  //     'content-type': 'application/json'
+  //   },
+  //   body: JSON.stringify({
+  //     messages: [{ role: 'user', content: question }]
+  //   })
+  // });
 
   if (!response.ok) {
     throw new Error(`Databricks request failed: ${response.status}`);
