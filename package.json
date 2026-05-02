@@ -1,5 +1,5 @@
 {
-  "name": "holmsrag-chatbot-astro",
+  "name": "holmesrag-chatbot-astro",
   "version": "0.2.0",
   "private": true,
   "type": "module",
@@ -9,7 +9,7 @@
     "preview": "astro preview"
   },
   "dependencies": {
+    "@astrojs/node": "^10.0.6",
     "astro": "latest"
-  },
-  "devDependencies": {}
+  }
 }
