@@ -1,7 +1,6 @@
 # App architectures
 
 ## Databricks
-
 ```mermaid
 flowchart TD
     A[Sherlock Holmes novels<br/>TXT / EPUB / PDF]
