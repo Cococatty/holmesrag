@@ -23,9 +23,7 @@ flowchart TD
     H --> J
     J --> K
     K --> L
-    L --> M# HolmesRAG Chatbot for Astro
-
-Embeddable Sherlock Holmes themed RAG chatbot for `carina.nz`, updated for an Astro site.
+    L --> M
 ```
 
 ## AWS
